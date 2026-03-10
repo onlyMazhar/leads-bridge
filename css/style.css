@@ -265,6 +265,18 @@ img {
     margin-bottom: 32px;
 }
 
+.center-div h3 {
+    margin-bottom: 16px;
+}
+
+.center-div > p {
+    margin: 0 auto;
+    font-size: var(--p1);
+    color: var(--txt-secondary);
+    margin-bottom: 40px;
+    max-width: 550px;
+}
+
 /* =========== Left Div Style ============== */
 .income-card h6 {
     margin-bottom: 20px;
@@ -302,7 +314,7 @@ img {
 
 /* ========== Statistics Style ========== */
 .stats-container {
-    padding: 60px 0;
+    padding: 60px 0 0 0 ;
     text-align: center;
 }
 
@@ -315,6 +327,8 @@ img {
 .stats-container > h5{
 margin-bottom: 32px;
 }
+
+
 
 
 .stats-card {
