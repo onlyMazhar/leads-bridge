@@ -1,0 +1,151 @@
+/* Variables */
+:root {
+    /* Colors */
+    --primary: #FFA500;
+
+    --bg-light: #FFFFFF;
+    --bg-dark: #151515;
+    --bg-dark-2: #232323;
+
+    --txt-primary: var(--bg-dark);
+    --txt-secondary: #4F4D4D;
+    --txt-pastel: #666666;
+    --txt-light: var(--bg-light);
+
+    /* Heading styles */
+    --h1: 72px;
+    --h1-line: 80px;
+
+    --h2: 56px;
+    --h2-line: 64px;
+
+    --h3: 40px;
+    --h3-line: 48px;
+
+    --h4: 32px;
+    --h4-line: 40px;
+
+    --h5: 24px;
+    --h5-line: 32px;
+
+    --h6: 20px;
+    --h6-line: 28px;
+
+    /* Paragraph styles */
+    --p1: 18px;
+    --p1-line: 28px;
+
+    --p2: 16px;
+    --p2-line: 26px;
+
+    --p3: 14px;
+    --p3-line: 16px;
+
+    --p4: 12px;
+    --p4-line: 16px;
+
+    --border: 8px;
+}
+
+/* Global Style */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Oswald", sans-serif;
+    background-color: var(--bg-light);
+    color: var(--txt-primary);
+}
+
+h1 {
+    font-size: var(--h1);
+    line-height: var(--h1-line);
+}
+
+h2 {
+    font-size: var(--h2);
+    line-height: var(--h2-line);
+}
+
+h3 {
+    font-size: var(--h3);
+    line-height: var(--h3-line);
+}
+
+h4 {
+    font-size: var(--h4);
+    line-height: var(--h4-line);
+}
+
+h5 {
+    font-size: var(--h5);
+    line-height: var(--h5-line);
+}
+
+h6 {
+    font-size: var(--h6);
+    line-height: var(--h6-line);
+}
+
+p {
+    font-size: var(--p2);
+    line-height: var(--p2-line);
+}
+
+span {
+    color: var(--primary);
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 100px 0;
+}
+
+.btn-primary {
+    font-family: "Oswald", sans-serif;
+    background-color: var(--primary);
+    padding: 12px 20px;
+    border: 4px solid  var(--bg-dark-2);
+    border-radius: 40px;
+    border-top: none;
+    border-left: none;
+    color: var(--bg-light);
+    font-size: var(--p2);
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.4ms;
+}
+
+.btn-primary:hover {
+    opacity: 0.9;
+}
+
+.btn-txt-bl{
+    color: var(--bg-dark-2);
+}
+
