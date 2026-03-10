@@ -45,7 +45,7 @@
     --p4-line: 16px;
 
     --border: 8px;
-    --card-border:16px;
+    --card-border: 16px;
 }
 
 /* Global Style */
@@ -146,9 +146,15 @@ img {
     opacity: 0.9;
 }
 
-.btn-txt-bl {
-    color: var(--bg-dark-2);
+ 
+
+.dark-bg {
+    background-color: var(--bg-dark);
 }
+
+
+
+
 
 /* Header */
 .header {
@@ -269,7 +275,7 @@ img {
     margin-bottom: 16px;
 }
 
-.center-div > p {
+.center-div>p {
     margin: 0 auto;
     font-size: var(--p1);
     color: var(--txt-secondary);
@@ -314,18 +320,18 @@ img {
 
 /* ========== Statistics Style ========== */
 .stats-container {
-    padding: 60px 0 0 0 ;
+    padding: 60px 0 0 0;
     text-align: center;
 }
 
-.stats-card-container{
+.stats-card-container {
     display: grid;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 20px;
 }
 
-.stats-container > h5{
-margin-bottom: 32px;
+.stats-container>h5 {
+    margin-bottom: 32px;
 }
 
 
@@ -336,9 +342,45 @@ margin-bottom: 32px;
     padding: 44px 16px;
     border-radius: var(--card-border);
 }
-.stats-card p{
+
+.stats-card p {
     color: var(--txt-secondary);
 }
-.stats-card h3{
+
+.stats-card h3 {
     margin-bottom: 12px;
+}
+
+/*  ========== Why Us Styles ========= */
+.why-us-content {
+    color: var(--bg-light);
+}
+
+.why-us-content>div>div {
+    width: 64px; 
+    overflow: hidden;
+    border: 1px solid white;
+    border-radius: var(--border);
+    margin-right: 8px;
+    margin-bottom: 12px;
+}
+
+.why-us-content>div>div img {
+    width: 100%;
+    object-fit: cover;
+    transform: scale(1.1);
+}
+
+.why-us-content > p{
+    margin: 16px 0 40px 0;
+}
+.why-us-content button {
+     border: 4px solid var(--bg-light);
+     border-top: none;
+     border-left: none;
+}
+
+.why-circle{
+    width: 280px;
+    height: 280px;
 }
