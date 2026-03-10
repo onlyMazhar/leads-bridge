@@ -130,7 +130,7 @@ img {
     font-family: "Oswald", sans-serif;
     background-color: var(--primary);
     padding: 12px 20px;
-    border: 4px solid  var(--bg-dark-2);
+    border: 4px solid var(--bg-dark-2);
     border-radius: 40px;
     border-top: none;
     border-left: none;
@@ -145,7 +145,156 @@ img {
     opacity: 0.9;
 }
 
-.btn-txt-bl{
+.btn-txt-bl {
     color: var(--bg-dark-2);
 }
 
+/* Header */
+.header {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Nav Styles */
+.navbar {
+    padding: 24px 0;
+}
+
+.nav-links {
+    margin-right: 48px;
+}
+
+.nav-links li {
+    list-style: none;
+}
+
+.nav-links a {
+    color: var(--txt-secondary);
+    padding-left: 32px;
+    text-decoration: none;
+    transform: 0.9ms;
+}
+
+.nav-links a:hover {
+    color: var(--primary);
+}
+
+/* ========== Hero Section Styles ========= */
+.hero {
+    padding: 120px 45px 200px;
+    background: linear-gradient(to top, rgba(255, 165, 0, 0.3), #FFFFFF);
+}
+
+
+/* =========== Right Div Style ============== */
+.right-card {
+    margin-top: -40px !important;
+}
+
+.stat-card {
+    border: 1px solid #EEEEEE;
+    margin-top: 80px;
+    background-color: var(--bg-light);
+    padding: 17px;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    transform: rotate(16deg);
+}
+
+.income-card {
+    transform: rotate(-16deg);
+}
+
+.income-card>p {
+    font-size: var(--p2);
+    font-weight: 600;
+}
+
+/* User Card Styles */
+.user-card {
+    align-items: center;
+    gap: 15px;
+}
+
+.avatar-group {
+    margin-right: 10px;
+}
+
+.avatar {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border: 3px solid var(--bg-light);
+    overflow: hidden;
+    margin-left: -15px;
+    /* Overlap effect */
+}
+
+.avatar:first-child {
+    margin-left: 0;
+}
+
+.rating-text {
+    font-size: var(--p3);
+    color: var(--txt-secondary);
+}
+
+/* =========== Center Div Style ============== */
+
+.center-div {
+    text-align: center;
+    width: 840px;
+}
+
+.center-div>div {
+    margin-bottom: 16px;
+}
+
+.center-div>div>div {
+    height: 30px;
+    width: 65px;
+    margin-right: 8px;
+}
+
+.center-div>div>div img {
+    border-radius: var(--border);
+}
+
+.center-div h1 {
+    margin-bottom: 32px;
+}
+
+/* =========== Left Div Style ============== */
+.income-card h6 {
+    margin-bottom: 20px;
+}
+
+.chart-container {
+    display: flex;
+    gap: 14px;
+    padding-top: 10px;
+    align-items: flex-end;
+}
+
+.bar-group {
+    text-align: center;
+}
+
+.bar-group p {
+    font-size: 8px;
+}
+
+.bar {
+    width: 20px;
+    background-color: #EEEEEE;
+    border-radius: 10px;
+}
+
+.bar.active {
+    background-color: var(--primary);
+}
+
+.bar-group p {
+    /* font-size: 10px; */
+    color: var(--txt-pastel);
+}
