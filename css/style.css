@@ -96,7 +96,7 @@ p {
     line-height: var(--p2-line);
 }
 
-span {
+span, .txt-yellow {
     color: var(--primary);
 }
 
