@@ -146,7 +146,9 @@ img {
     opacity: 0.9;
 }
 
- 
+.mx-auto{
+    margin: 0 auto;
+}
 
 .dark-bg {
     background-color: var(--bg-dark);
@@ -248,22 +250,22 @@ img {
 
 /* =========== Center Div Style ============== */
 
-.center-div {
+.center-div,.sell-div {
     text-align: center;
     width: 840px;
 }
 
-.center-div>div {
+.center-div>div  {
     margin-bottom: 16px;
 }
 
-.center-div>div>div {
+.center-div>div>div,.sell-div>div>div  {
     height: 30px;
     width: 65px;
     margin-right: 8px;
 }
 
-.center-div>div>div img {
+.center-div>div>div img,.sell-div>div>div img  {
     border-radius: var(--border);
 }
 
@@ -275,7 +277,7 @@ img {
     margin-bottom: 16px;
 }
 
-.center-div>p {
+.center-div>p,.sell-div>p {
     margin: 0 auto;
     font-size: var(--p1);
     color: var(--txt-secondary);
@@ -354,10 +356,11 @@ img {
 /*  ========== Why Us Styles ========= */
 .why-us-content {
     color: var(--bg-light);
+    width: 50%;
 }
 
 .why-us-content>div>div {
-    width: 64px; 
+    width: 64px;
     overflow: hidden;
     border: 1px solid white;
     border-radius: var(--border);
@@ -371,16 +374,61 @@ img {
     transform: scale(1.1);
 }
 
-.why-us-content > p{
+.why-us-content>p {
     margin: 16px 0 40px 0;
 }
+
 .why-us-content button {
-     border: 4px solid var(--bg-light);
-     border-top: none;
-     border-left: none;
+    border: 4px solid var(--bg-light);
+    border-top: none;
+    border-left: none;
 }
 
-.why-circle{
+.why-us-list {
+    flex: 1;
+}
+
+.why-circle {
     width: 280px;
     height: 280px;
+    padding: 80px;
+    margin: 0 auto;
+    border-radius: 50%;
+    background-color: var(--bg-dark-2);
+    border: 8px solid var(--primary);
+    border-top: none;
+    border-left: none;
+    border-right: none;
 }
+
+.why-circle img {
+    height: 120px;
+    width: 120px;
+    margin: 0 auto;
+    align-content: center;
+}
+
+/* ========== Sells Section ========== */
+.sell-div>div {
+    margin-bottom: 12px;
+}
+
+.sell-div h2 {
+    margin-bottom: 16px;
+}
+
+.sell-cards{
+
+}
+
+.sell-cards > div > div {
+    border: 2px solid #EEEEEE;
+    padding: 32px;
+    border-radius: var(--card-border);
+}
+
+.sell-cards > div > div > div {
+    width: 65px;
+    height: 65px;
+}
+ 
