@@ -161,6 +161,11 @@ img {
     background-color: var(--bg-dark);
 }
 
+.txt-white {
+    color: var(--txt-light);
+}
+
+
 
 
 
@@ -542,4 +547,77 @@ img {
 
 .call-to-action {
     margin-top: 20px;
+}
+
+/* =========== Reality Section Styles ============ */
+
+.reality-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.reality-header h2 {
+    margin-bottom: 20px;
+    max-width: 470px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.subtitle {
+    max-width: 480px;
+    margin: 0 auto;
+    color: var(--txt-secondary);
+}
+
+.reality-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    margin-bottom: 50px;
+}
+
+.reality-card {
+    border: 1px solid #EEEEEE;
+    padding: 24px;
+    border-radius: var(--card-border);
+    transition: 0.3s;
+}
+
+.reality-card h6 {
+    margin-bottom: 15px;
+    font-size: var(--p1);
+}
+
+.vertical-divider {
+    height: 48px;
+    border-left: 2px solid #FFE5B4;
+    margin-bottom: 20px;
+}
+
+
+.reality-card p {
+    color: var(--txt-secondary);
+    font-size: var(--p1);
+}
+
+.reality-footer {
+    margin-top: 40px;
+}
+
+/* =========== How We Help ========== */
+ 
+.sub-title {
+    margin: 0 auto;
+    color: var(--bg-light);
+    max-width: 480px;
+
+}
+
+.border-none {
+    background-color: var(--bg-dark-2);
+    border: none !important;
+}
+
+.border-none p {
+    color: var(--bg-light);
 }
