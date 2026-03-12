@@ -96,7 +96,8 @@ p {
     line-height: var(--p2-line);
 }
 
-span, .txt-yellow {
+span,
+.txt-yellow {
     color: var(--primary);
 }
 
@@ -146,7 +147,7 @@ img {
     opacity: 0.9;
 }
 
-.mx-auto{
+.mx-auto {
     margin: 0 auto;
 }
 
@@ -250,22 +251,25 @@ img {
 
 /* =========== Center Div Style ============== */
 
-.center-div,.sell-div {
+.center-div,
+.sell-div {
     text-align: center;
     width: 840px;
 }
 
-.center-div>div  {
+.center-div>div {
     margin-bottom: 16px;
 }
 
-.center-div>div>div,.sell-div>div>div  {
+.center-div>div>div,
+.sell-div>div>div {
     height: 30px;
     width: 65px;
     margin-right: 8px;
 }
 
-.center-div>div>div img,.sell-div>div>div img  {
+.center-div>div>div img,
+.sell-div>div>div img {
     border-radius: var(--border);
 }
 
@@ -277,7 +281,8 @@ img {
     margin-bottom: 16px;
 }
 
-.center-div>p,.sell-div>p {
+.center-div>p,
+.sell-div>p {
     margin: 0 auto;
     font-size: var(--p1);
     color: var(--txt-secondary);
@@ -409,26 +414,63 @@ img {
 }
 
 /* ========== Sells Section ========== */
-.sell-div>div {
-    margin-bottom: 12px;
-}
-
-.sell-div h2 {
-    margin-bottom: 16px;
-}
-
 .sell-cards{
-
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 24px;
 }
-
-.sell-cards > div > div {
-    border: 2px solid #EEEEEE;
+.card {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #EEEEEE;
     padding: 32px;
     border-radius: var(--card-border);
 }
 
-.sell-cards > div > div > div {
-    width: 65px;
-    height: 65px;
+.card-text-content{
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
 }
- 
+
+.card-title {
+    color: var(--primary);
+    font-size: var(--p1);
+}
+
+.rocket-wrapper {
+    width: 64px;
+    height: 64px;
+}
+
+.vertical-divider {
+    height: 48px;
+    border-left: 3px solid #FFE5B4;
+
+}
+
+.check-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.check-item {
+    align-items: center;
+    gap: 12px;
+}
+
+.circle-icon {
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+    /* Prevents icon from squishing on long text */
+}
+
+.check-list p {
+    font-size: var(--p2);
+    color: var(--txt-secondary);
+    margin: 0;
+}
+
+/* ============ Our Approach Styles ============ */
