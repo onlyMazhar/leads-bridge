@@ -181,6 +181,11 @@ img {
     padding: 24px 0;
 }
 
+.nav-toggler {
+    display: none;
+    cursor: pointer;
+}
+
 .nav-links {
     margin-right: 48px;
 }
@@ -199,6 +204,8 @@ img {
 .nav-links a:hover {
     color: var(--primary);
 }
+
+
 
 /* ========== Hero Section Styles ========= */
 .hero {
@@ -622,8 +629,24 @@ img {
     color: var(--bg-light);
 }
 
+/* ========= Calendly ========= */
+.booking-section {
+    padding: 80px 20px;
+    text-align: center;
+}
 
+.booking-section h1 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
 
+ .calendly-inline-widget {
+    border: 1px solid #EEEEEE;
+    border-radius: var(--card-border);
+    overflow: hidden;
+    margin-top: 40px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
 
 
 
@@ -708,7 +731,7 @@ img {
 
 
 
- 
+
 /* ========= TABLET STYLES ========= */
 @media (max-width: 1024px) {
 
@@ -719,14 +742,14 @@ img {
         padding-right: 40px;
     }
 
-     :root {
+    :root {
         --h1: 56px;
         --h1-line: 62px;
         --h2: 42px;
         --h3: 32px;
     }
 
-     .approach-wrapper {
+    .approach-wrapper {
         flex-direction: column;
         gap: 40px;
     }
@@ -736,13 +759,13 @@ img {
         width: 100%;
     }
 
-     .reality-grid {
+    .reality-grid {
         grid-template-columns: repeat(2, 1fr);
     }
 }
 
 /*   ========= SMALL TABLET ========= */
-@media (max-width: 768px) { 
+@media (max-width: 768px) {
     .container {
         padding: 60px 20px;
     }
@@ -786,6 +809,12 @@ img {
         margin-bottom: 40px;
     }
 
+    /* =========== Calendly =========== */
+
+    .calendly-inline-widget {
+        height: 1000px !important; /* Calendly needs more height on mobile to show the calendar + times */
+    }
+
     /* ========= Footer adjustments ========= */
     .footer-content {
         flex-direction: column;
@@ -807,6 +836,7 @@ img {
         flex-direction: column;
         gap: 15px;
     }
+
 
     .nav-links {
         margin-right: 0;
